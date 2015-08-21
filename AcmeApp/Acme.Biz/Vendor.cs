@@ -12,9 +12,9 @@ namespace Acme.Biz
         public string CompanyName { get; set; }
         public string Email { get; set; }
 
-        public override string ToString()
+        public string SayHello()
         {
-            return CompanyName;
+            return "Hello" + this.CompanyName;
         }
     }
 }

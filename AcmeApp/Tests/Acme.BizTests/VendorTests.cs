@@ -12,16 +12,48 @@ namespace Acme.Biz.Tests
     public class VendorTests
     {
         [TestMethod()]
-        public void ToStringTest()
+        public void SayHello_ValidCompany_Success()
         {
             // Arrange
-            var expected = "ABC Corp";
+            var expected = "Hello ABC Corp";
 
             var vendor = new Vendor();
             vendor.CompanyName = "ABC Corp";
 
             // Act
-            var actual = vendor.ToString();
+            var actual = vendor.SayHello();
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void SayHello_EmptyCompany_Success()
+        {
+            // Arrange
+            var expected = "Hello";
+
+            var vendor = new Vendor();
+            vendor.CompanyName = "";
+
+            // Act
+            var actual = vendor.SayHello();
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void SayHello_NullCompany_Success()
+        {
+            // Arrange
+            var expected = "Hello";
+
+            var vendor = new Vendor();
+            vendor.CompanyName = null;
+
+            // Act
+            var actual = vendor.SayHello();
 
             // Assert
             Assert.AreEqual(expected, actual);
