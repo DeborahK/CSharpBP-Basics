@@ -15,10 +15,9 @@ namespace Acme.Biz.Tests
         public void SayHello_ValidCompany_Success()
         {
             // Arrange
-            var expected = "Hello ABC Corp";
-
             var vendor = new Vendor();
             vendor.CompanyName = "ABC Corp";
+            var expected = "Hello ABC Corp";
 
             // Act
             var actual = vendor.SayHello();

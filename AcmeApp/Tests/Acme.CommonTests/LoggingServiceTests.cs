@@ -12,9 +12,17 @@ namespace Acme.Common.Tests
     public class LoggingServiceTests
     {
         [TestMethod()]
-        public void ToStringTest()
+        public void SayHelloTest()
         {
-            
+            // Arrange
+            var logger = new LoggingService();
+            var expected = "Hello from the logging service";
+
+            // Act
+            var actual = logger.SayHello();
+
+            // Assert
+            Assert.AreEqual(expected, actual);
         }
     }
 }

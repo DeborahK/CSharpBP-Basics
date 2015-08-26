@@ -8,9 +8,9 @@ namespace Acme.Common
 {
     public class LoggingService
     {
-        public override string ToString()
+        public string SayHello()
         {
-            return base.ToString();
+            return "Hello from the logging service";
         }
     }
 }
