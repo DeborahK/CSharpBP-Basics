@@ -12,7 +12,7 @@ namespace Acme.Common.Tests
     public class LoggingServiceTests
     {
         [TestMethod()]
-        public void SayHelloTest()
+        public void SayHello_Success()
         {
             // Arrange
             var logger = new LoggingService();
