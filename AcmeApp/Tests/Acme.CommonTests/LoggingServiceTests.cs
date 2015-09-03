@@ -15,11 +15,10 @@ namespace Acme.Common.Tests
         public void SayHello_Success()
         {
             // Arrange
-            var logger = new LoggingService();
             var expected = "Hello from the logging service";
 
             // Act
-            var actual = logger.SayHello();
+            var actual = LoggingService.SayHello();
 
             // Assert
             Assert.AreEqual(expected, actual);

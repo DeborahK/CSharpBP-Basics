@@ -6,14 +6,25 @@ using System.Threading.Tasks;
 
 namespace Acme.Common
 {
-    public class LoggingService
+    /// <summary>
+    /// Provides logging.
+    /// </summary>
+    public static class LoggingService
     {
-        public void LogAction(string action)
+        /// <summary>
+        /// Logs actions.
+        /// </summary>
+        /// <param name="action">Action to log.</param>
+        public static void LogAction(string action)
         {
             Console.WriteLine(DateTime.Now + ": " + action);
         }
 
-        public string SayHello()
+        /// <summary>
+        /// Test method.
+        /// </summary>
+        /// <returns></returns>
+        public static string SayHello()
         {
             return "Hello from the logging service";
         }
