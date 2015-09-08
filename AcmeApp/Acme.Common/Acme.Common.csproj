@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="EmailService.cs" />
     <Compile Include="LoggingService.cs" />
+    <Compile Include="OperationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
