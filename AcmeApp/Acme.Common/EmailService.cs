@@ -12,15 +12,6 @@ namespace Acme.Common
     public class EmailService
     {
         /// <summary>
-        /// Test method.
-        /// </summary>
-        /// <returns></returns>
-        public string SayHello()
-        {
-            return "Hello from the email service";
-        }
-
-        /// <summary>
         /// Sends email message
         /// </summary>
         /// <param name="subject">Subject of the message.</param>
@@ -30,7 +21,7 @@ namespace Acme.Common
         public bool SendMessage(string subject, string message, string recipient)
         {
             // Code to send an email
-            LoggingService.LogAction("Message sent " + DateTime.Now + ": " + message);
+            LoggingService.LogAction("Message sent " + DateTime.Now + ": " + subject);
             return true;
         }
 

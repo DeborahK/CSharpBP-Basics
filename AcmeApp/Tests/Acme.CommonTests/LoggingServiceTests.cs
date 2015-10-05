@@ -12,13 +12,13 @@ namespace Acme.Common.Tests
     public class LoggingServiceTests
     {
         [TestMethod()]
-        public void SayHello_Success()
+        public void LogAction_Success()
         {
             // Arrange
-            var expected = "Hello from the logging service";
+            var expected = "Action: Test Action";
 
             // Act
-            var actual = LoggingService.SayHello();
+            var actual = LoggingService.LogAction("Test Action");
 
             // Assert
             Assert.AreEqual(expected, actual);

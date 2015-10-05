@@ -16,6 +16,7 @@ namespace Acme.Biz.Tests
         {
             // Arrange
             var vendor = new Vendor();
+            vendor.VendorId = 1;
             vendor.CompanyName = "ABC Corp";
             var expected = "Hello ABC Corp";
 

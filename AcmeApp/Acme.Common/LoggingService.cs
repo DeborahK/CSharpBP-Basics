@@ -15,18 +15,12 @@ namespace Acme.Common
         /// Logs actions.
         /// </summary>
         /// <param name="action">Action to log.</param>
-        public static void LogAction(string action)
+        public static string LogAction(string action)
         {
-            Console.WriteLine(DateTime.Now + ": " + action);
-        }
+            var logText = "Action: " + action;
+            Console.WriteLine(logText);
 
-        /// <summary>
-        /// Test method.
-        /// </summary>
-        /// <returns></returns>
-        public static string SayHello()
-        {
-            return "Hello from the logging service";
+            return logText;
         }
     }
 }

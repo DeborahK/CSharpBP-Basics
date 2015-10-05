@@ -1,10 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Acme.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Acme.Common.Tests
 {
@@ -12,14 +6,15 @@ namespace Acme.Common.Tests
     public class EmailServiceTests
     {
         [TestMethod()]
-        public void SayHello_Success()
+        public void SendMessage_Success()
         {
             // Arrange
-            var expected = "Hello from the email service";
             var email = new EmailService();
+            var expected = true;
 
             // Act
-            var actual = email.SayHello();
+            var actual = email.SendMessage("Test Message",
+                "This is a test message", "abc@abc.com");
 
             // Assert
             Assert.AreEqual(expected, actual);
