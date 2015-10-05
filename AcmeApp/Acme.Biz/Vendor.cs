@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acme.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,12 @@ namespace Acme.Biz
         /// Test method.
         /// </summary>
         /// <returns></returns>
-        public string SayHello()
+        public string SendWelcomeEmail(string message)
         {
-            return "Hello" + this.CompanyName;
+            var emailService = new EmailService();
+            var confirmation = emailService.SendMessage("Hello" + this.CompanyName, 
+                                                        message, this.Email);
+            return confirmation;
         }
     }
 }

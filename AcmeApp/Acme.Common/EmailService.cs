@@ -18,11 +18,13 @@ namespace Acme.Common
         /// <param name="message">Message text</param>
         /// <param name="recipient">Email address of the message recipient.</param>
         /// <returns></returns>
-        public bool SendMessage(string subject, string message, string recipient)
+        public string SendMessage(string subject, string message, string recipient)
         {
             // Code to send an email
-            LoggingService.LogAction("Message sent " + DateTime.Now + ": " + subject);
-            return true;
+
+            var confirmation = "Message sent: " + subject;
+            LoggingService.LogAction(confirmation);
+            return confirmation;
         }
 
     }

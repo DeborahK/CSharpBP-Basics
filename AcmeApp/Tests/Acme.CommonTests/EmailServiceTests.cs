@@ -10,7 +10,7 @@ namespace Acme.Common.Tests
         {
             // Arrange
             var email = new EmailService();
-            var expected = true;
+            var expected = "Message Sent: Test Message";
 
             // Act
             var actual = email.SendMessage("Test Message",
