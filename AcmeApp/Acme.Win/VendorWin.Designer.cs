@@ -32,7 +32,7 @@
             this.CompanyNameTextBox = new System.Windows.Forms.TextBox();
             this.EmailTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.CloseButton = new System.Windows.Forms.Button();
+            this.CancelChangesButton = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -72,17 +72,18 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Email Address:";
             // 
-            // CloseButton
+            // CancelChangesButton
             // 
-            this.CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseButton.CausesValidation = false;
-            this.CloseButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CloseButton.Location = new System.Drawing.Point(214, 143);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(75, 23);
-            this.CloseButton.TabIndex = 4;
-            this.CloseButton.Text = "Cancel";
-            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CancelChangesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.CancelChangesButton.CausesValidation = false;
+            this.CancelChangesButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.CancelChangesButton.Location = new System.Drawing.Point(214, 143);
+            this.CancelChangesButton.Name = "CancelChangesButton";
+            this.CancelChangesButton.Size = new System.Drawing.Size(75, 23);
+            this.CancelChangesButton.TabIndex = 4;
+            this.CancelChangesButton.Text = "Cancel";
+            this.CancelChangesButton.UseVisualStyleBackColor = true;
+            this.CancelChangesButton.Click += new System.EventHandler(this.CancelChangesButton_Click);
             // 
             // SaveButton
             // 
@@ -103,7 +104,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(301, 178);
             this.Controls.Add(this.SaveButton);
-            this.Controls.Add(this.CloseButton);
+            this.Controls.Add(this.CancelChangesButton);
             this.Controls.Add(this.EmailTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CompanyNameTextBox);
@@ -123,7 +124,7 @@
         private System.Windows.Forms.TextBox CompanyNameTextBox;
         private System.Windows.Forms.TextBox EmailTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.Button CancelChangesButton;
         private System.Windows.Forms.Button SaveButton;
     }
 }

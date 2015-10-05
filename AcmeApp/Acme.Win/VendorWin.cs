@@ -23,12 +23,7 @@ namespace Acme.Win
 
         private void Vendor_Load(object sender, EventArgs e)
         {
-            vendorRepository = new VendorRepository();
-            currentVendor = vendorRepository.Retrieve(1);
-
-            // Populate the form
-            this.CompanyNameTextBox.Text = currentVendor.CompanyName;
-            this.EmailTextBox.Text = currentVendor.Email;
+            LoadData();
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
@@ -38,5 +33,21 @@ namespace Acme.Win
             currentVendor.Email = this.EmailTextBox.Text;
             vendorRepository.Save(currentVendor);
         }
+
+        private void CancelChangesButton_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            vendorRepository = new VendorRepository();
+            currentVendor = vendorRepository.Retrieve(1);
+
+            // Populate the form
+            this.CompanyNameTextBox.Text = currentVendor.CompanyName;
+            this.EmailTextBox.Text = currentVendor.Email;
+        }
+
     }
 }
