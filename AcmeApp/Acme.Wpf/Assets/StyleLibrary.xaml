@@ -1,0 +1,69 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <FontFamily
+        x:Key="ApplicationFontFamily">Verdana</FontFamily>
+
+    <Color
+        x:Key="HeaderColor">Orange</Color>
+    <Color
+        x:Key="TextColor">White</Color>
+    <Color
+        x:Key="BorderColor">Gray</Color>
+    <Color
+        x:Key="BackgroundColor">Black</Color>
+
+    <SolidColorBrush
+        x:Key="HeaderBrush"
+        Color="{StaticResource HeaderColor}" />
+    <SolidColorBrush
+        x:Key="TextBrush"
+        Color="{StaticResource TextColor}" />
+    <SolidColorBrush
+        x:Key="BackgroundBrush"
+        Color="{StaticResource BackgroundColor}" />
+
+    <LinearGradientBrush
+        x:Key="BorderGradientBrush">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop 
+            Color="{StaticResource BorderColor}" 
+            Offset="0.0"/>
+            <GradientStop
+            Color="{StaticResource TextColor}"
+            Offset="0.5" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <Style
+        x:Key="NormalTextStyle"
+        TargetType="TextBlock">
+        <Setter
+            Property="FontFamily"
+            Value="{StaticResource ApplicationFontFamily}" />
+        <Setter
+            Property="FontSize"
+            Value="12" />
+        <Setter
+            Property="Foreground"
+            Value="{StaticResource HeaderBrush}" />
+        <Setter
+            Property="VerticalAlignment"
+            Value="Top" />
+    </Style>
+
+    <Style
+        x:Key="ListBorderStyle"
+        TargetType="Border">
+        <Setter
+            Property="BorderBrush"
+            Value="{StaticResource BorderGradientBrush}" />
+        <Setter
+            Property="BorderThickness"
+            Value="2" />
+        <Setter
+            Property="VerticalAlignment"
+            Value="Top" />
+    </Style>
+
+</ResourceDictionary>

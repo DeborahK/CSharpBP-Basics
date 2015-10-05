@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Biz", "Acme.Biz\Acme.B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.BizTests", "Tests\Acme.BizTests\Acme.BizTests.csproj", "{8A097724-9C89-4645-9629-E9FA945E8695}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Win", "Acme.Win\Acme.Win.csproj", "{A22E0D0A-25D7-428F-978C-364C2A4CAE81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Wpf", "Acme.Wpf\Acme.Wpf.csproj", "{42D49B3A-5F7B-4242-BC5C-66075496C895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,14 @@ Global
 		{8A097724-9C89-4645-9629-E9FA945E8695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A097724-9C89-4645-9629-E9FA945E8695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A097724-9C89-4645-9629-E9FA945E8695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22E0D0A-25D7-428F-978C-364C2A4CAE81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22E0D0A-25D7-428F-978C-364C2A4CAE81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22E0D0A-25D7-428F-978C-364C2A4CAE81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22E0D0A-25D7-428F-978C-364C2A4CAE81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D49B3A-5F7B-4242-BC5C-66075496C895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D49B3A-5F7B-4242-BC5C-66075496C895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D49B3A-5F7B-4242-BC5C-66075496C895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D49B3A-5F7B-4242-BC5C-66075496C895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
