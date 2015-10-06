@@ -17,13 +17,14 @@ namespace Acme.Biz
         public string Email { get; set; }
 
         /// <summary>
-        /// Test method.
+        /// Sends an email to welcome a new vendor.
         /// </summary>
         /// <returns></returns>
         public string SendWelcomeEmail(string message)
         {
             var emailService = new EmailService();
-            var confirmation = emailService.SendMessage("Hello" + this.CompanyName, 
+            var subject = "Hello" + this.CompanyName;
+            var confirmation = emailService.SendMessage(subject,
                                                         message, this.Email);
             return confirmation;
         }
