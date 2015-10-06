@@ -56,8 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Acme.Biz\Acme.Biz.csproj">
-      <Project>{5C818AB4-0B33-4802-933D-11210EB5C229}</Project>
-      <Name>Acme.BL</Name>
+      <Project>{5c818ab4-0b33-4802-933d-11210eb5c229}</Project>
+      <Name>Acme.Biz</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
