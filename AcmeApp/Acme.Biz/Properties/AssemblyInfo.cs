@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Acme.BL")]
+[assembly: AssemblyTitle("Acme.Biz")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("InStep Technologies, Inc.")]
-[assembly: AssemblyProduct("Acme.BL")]
+[assembly: AssemblyProduct("Acme.Biz")]
 [assembly: AssemblyCopyright("Copyright © InStep Technologies, Inc. 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
