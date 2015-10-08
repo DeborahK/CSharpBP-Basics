@@ -1,7 +1,8 @@
 ﻿namespace Acme.Common
 {
     /// <summary>
-    /// Provides a success flag and message useful as a method return type.
+    /// Provides a success flag and message 
+    /// useful as a method return type.
     /// </summary>
     public class OperationResult
     {
