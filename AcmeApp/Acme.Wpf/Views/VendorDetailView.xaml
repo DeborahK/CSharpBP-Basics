@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Acme.Wpf.Views"
       xmlns:vms="clr-namespace:Acme.Wpf.ViewModels"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="500"
+      d:DesignHeight="150" d:DesignWidth="400"
       Title="Vendor Detail">
 
     <Page.DataContext>
@@ -52,7 +52,7 @@
                     <RowDefinition
                         Height="Auto" />
                 </Grid.RowDefinitions>
-                
+
                 <Grid.ColumnDefinitions>
                     <!-- Label Column -->
                     <ColumnDefinition
@@ -70,13 +70,13 @@
                        Target="{Binding ElementName=CompanyNameTextBox}">
                     <TextBlock Text="CompanyName:"
                                Style="{StaticResource NormalTextStyle}">
-                        
+
                     </TextBlock>
                 </Label>
                 <TextBox x:Name="CompanyNameTextBox"
                          Grid.Row="0"
                          Grid.Column="1"
-                         Text="{Binding currentVendor.CompanyName, Mode=TwoWay}">
+                         Text="{Binding CurrentVendor.CompanyName, Mode=TwoWay}">
                 </TextBox>
 
                 <Label Grid.Row="1" 
@@ -90,7 +90,7 @@
                 <TextBox x:Name="EmailTextBox"
                          Grid.Row="1"
                          Grid.Column="1"
-                         Text="{Binding currentVendor.Email, Mode=TwoWay}">
+                         Text="{Binding CurrentVendor.Email, Mode=TwoWay}">
 
                 </TextBox>
 

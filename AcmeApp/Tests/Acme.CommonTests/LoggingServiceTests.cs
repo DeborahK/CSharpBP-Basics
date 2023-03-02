@@ -1,28 +1,25 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Acme.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Acme.Common.Tests
+namespace Acme.CommonTests
 {
-    [TestClass()]
-    public class LoggingServiceTests
+  [TestClass()]
+  public class LoggingServiceTests
+  {
+    [TestMethod()]
+    public void LogAction_Success()
     {
-        [TestMethod()]
-        public void LogAction_Success()
-        {
-            // Arrange
-            var loggingService = new LoggingService();
-            var expected = "Action: Test Action";
+      // Arrange
+      var expected = "Action: Test Action";
 
-            // Act
-            var actual = loggingService.LogAction("Test Action");
+      // Act
+      var actual = LoggingService.LogAction("Test Action");
 
-            // Assert
-            Assert.AreEqual(expected, actual);
-        }
+      // Assert
+      Assert.AreEqual(expected, actual);
     }
+  }
 }
