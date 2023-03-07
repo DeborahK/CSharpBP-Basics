@@ -1,34 +1,33 @@
-﻿namespace Acme.Biz
-{
-    public class VendorRepository
-    {
-        /// <summary>
-        /// Retrieve one vendor.
-        /// </summary>
-        public Vendor Retrieve(int vendorId)
-        {
-            // Create the instance of the Vendor class
-            Vendor vendor = new Vendor();
+﻿namespace Acme.Biz;
 
-            // Code that retrieves the defined customer
+public class VendorRepository
+  {
+      /// <summary>
+      /// Retrieve one vendor.
+      /// </summary>
+      public Vendor Retrieve(int vendorId)
+      {
+          // Create the instance of the Vendor class
+          Vendor vendor = new Vendor();
 
-            // Temporary hard coded values to return 
-            if (vendorId == 1)
-            {
-                vendor.VendorId = 1;
-                vendor.CompanyName = "ABC Corp";
-                vendor.Email = "abc@abc.com";
-            }
-            return vendor;
-        }
+          // Code that retrieves the defined customer
 
-        public bool Save(Vendor vendor)
-        {
-            var success = true;
+          // Temporary hard coded values to return 
+          if (vendorId == 1)
+          {
+              vendor.VendorId = 1;
+              vendor.CompanyName = "ABC Corp";
+              vendor.Email = "abc@abc.com";
+          }
+          return vendor;
+      }
 
-            // Code that saves the vendor
+      public bool Save(Vendor vendor)
+      {
+          var success = true;
 
-            return success;
-        }
-    }
-}
+          // Code that saves the vendor
+
+          return success;
+      }
+  }

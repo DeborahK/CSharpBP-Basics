@@ -3,31 +3,30 @@ using Acme.Wpf.ViewModels;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Acme.Wpf.Views
+namespace Acme.Wpf.Views;
+
+/// <summary>
+/// Interaction logic for VendorDetailView.xaml
+/// </summary>
+public partial class VendorDetailView : Page
 {
-  /// <summary>
-  /// Interaction logic for VendorDetailView.xaml
-  /// </summary>
-  public partial class VendorDetailView : Page
+  public VendorDetailView()
   {
-    public VendorDetailView()
-    {
-      InitializeComponent();
-    }
+    InitializeComponent();
+  }
 
-    private void SaveButton_Click(object sender, RoutedEventArgs e)
+  private void SaveButton_Click(object sender, RoutedEventArgs e)
+  {
+    var vm = (VendorDetailViewModel)((Button)e.OriginalSource).DataContext;
+    if (vm?.CurrentVendor != null)
     {
-      var vm = (VendorDetailViewModel)((Button)e.OriginalSource).DataContext;
-      if (vm?.CurrentVendor != null)
-      {
-        var vendorRepository = new VendorRepository();
-        vendorRepository.Save(vm.CurrentVendor);
-      }
+      var vendorRepository = new VendorRepository();
+      vendorRepository.Save(vm.CurrentVendor);
     }
+  }
 
-    private void CancelButton_Click(object sender, RoutedEventArgs e)
-    {
-      this.NavigationService.Refresh();
-    }
+  private void CancelButton_Click(object sender, RoutedEventArgs e)
+  {
+    this.NavigationService.Refresh();
   }
 }

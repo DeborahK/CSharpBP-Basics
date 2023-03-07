@@ -1,20 +1,19 @@
-﻿namespace Acme.Common
+﻿namespace Acme.Common;
+
+/// <summary>
+/// Provides logging.
+/// </summary>
+public static class LoggingService
 {
   /// <summary>
-  /// Provides logging.
+  /// Logs actions.
   /// </summary>
-  public static class LoggingService
+  /// <param name="action">Action to log.</param>
+  public static string LogAction(string action)
   {
-    /// <summary>
-    /// Logs actions.
-    /// </summary>
-    /// <param name="action">Action to log.</param>
-    public static string LogAction(string action)
-    {
-            var logText = "Action: " + action;
-            Console.WriteLine(logText);
+          var logText = "Action: " + action;
+          Console.WriteLine(logText);
 
-            return logText;
-    }
+          return logText;
   }
 }
